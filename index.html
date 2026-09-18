@@ -19,6 +19,7 @@
       padding: 0;
       line-height: 1.6;
       scroll-behavior: smooth;
+      
     }
 
     /* ----- navigation ----- */
@@ -154,7 +155,7 @@
     }
 
     .price-tag {
-      background: #f1f3f5;
+      background: #e9dce0;
       padding: 0.5rem 1.2rem;
       border-radius: 40px;
       display: inline-block;
@@ -750,9 +751,32 @@
       margin-top: 1.2rem;
     }
 
+
+
+        /* Glowing pulse for primary button */
+    @keyframes btnPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.55); }
+      70%  { box-shadow: 0 0 0 16px rgba(220, 53, 69, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+    }
+
+    .btn-primary {
+      animation: btnPulse 2s infinite;
+    }
+
+
+    .price-tag {
+      animation: pricePulse 2s infinite;
+    }
+
+
+
+
     .legal-close-btn:hover {
       background: #2b2b3f;
     }
+
+
 
     /* ----- responsiveness ----- */
     @media (max-width: 700px) {
@@ -980,9 +1004,9 @@
   </p>
 
 
-    <div class="price-tag">Starting at $3,500 (Negotiable)</div>
+    <div class="price-tag">$3,500 (Negotiable)</div>
 
-  <p style="font-size: 0.95rem; color: #3d4a5a; margin-top: -0.5rem; margin-bottom: 1.5rem; text-align: left;">
+    <p style="font-size: 1.15rem; color: #3d4a5a; margin-top: -0.5rem; margin-bottom: 1.5rem; text-align: left;">
     <strong>Standard website</strong> Landing, Brochure, or Blog → <strong>$2,000+</strong><br>
     <strong>E-commerce site</strong> → <strong>$3,500+</strong>
   </p>
